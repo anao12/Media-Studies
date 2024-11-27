@@ -15,7 +15,7 @@ CLOSE_UP_RATIO_THRESHOLD = 0.20  # Face area to frame area ratio for a close-up
 ANALYSIS_FREQUENCY_SECONDS = 0.5  # Analyze every 0.5 seconds of video
 
 # Set the path to the models directory
-model_dir = "/Users/Ceci/Documents/Computer Vision/models"
+model_dir = "YOUR_DIRECTORY"
 prototxt_path = os.path.join(model_dir, "deploy.prototxt")
 model_path = os.path.join(model_dir, "res10_300x300_ssd_iter_140000.caffemodel")
 
@@ -180,14 +180,7 @@ def analyze_multiple_videos(video_paths):
 
 # Example usage with multiple video files
 video_paths = [
-    "/Users/Ceci/Documents/Computer Vision/sample_video.mp4",
-    "/Users/Ceci/Documents/Computer Vision/kayla.mov",
-    "/Users/Ceci/Documents/Computer Vision/krystal.mp4",
-    "/Users/Ceci/Documents/Computer Vision/elliot.mp4",
-    "/Users/Ceci/Documents/Computer Vision/elijah.MOV",
-    "/Users/Ceci/Documents/Computer Vision/justin.mov",
-    "/Users/Ceci/Documents/Computer Vision/tatiana.MOV",
-    "/Users/Ceci/Documents/Computer Vision/sophia.MOV"
+    "YOUR_VIDEO_PATHS"
 ]
 
 analyze_multiple_videos(video_paths)
